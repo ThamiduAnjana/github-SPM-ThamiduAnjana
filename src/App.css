@@ -1,0 +1,38 @@
+Body{
+  background-image: url(images/BG.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+.align_center{
+  margin-left: auto;
+  margin-right: auto;
+}
+.text_align_center{
+  text-align: center;
+}
+.buttom_align_right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+.button_style{
+  width: 150px;
+  height: 50px;
+}
+.top_padding_1{
+ padding-top: 1%; 
+}
+.top_padding_5{
+  padding-top: 5%; 
+ }
+ .bottom_padding_1{
+  padding-bottom: 1%; 
+ }
+.main_box{
+  border-width: 2px;
+  border: darkslategray;
+}
+.button_center{
+  justify-content: center;
+}
