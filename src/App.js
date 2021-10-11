@@ -68,16 +68,23 @@ function App() {
       price: txt_price,
       source: txt_source,
       remarks: txt_remarks
+    }).then(response => {
+      alert("Successfully Inserted..!");
+      //window.location.reload(true);
+    }).catch(error=>{
+      console.log(error);
     });
-    alert("Successfully Inserted..!");
-    window.location.reload(true);
   };
 
   //delete book details function
   const deleteBook = (deletebookid) => {
-    Axios.delete(`https://spm-library-management-system.herokuapp.com/api/delete/${deletebookid}`);
-    alert("Successfully Deleted..!");
-    window.location.reload(true);
+    Axios.delete(`https://spm-library-management-system.herokuapp.com/api/delete/${deletebookid}`)
+    .then(response => {
+      alert("Successfully Deleted..!");
+      //window.location.reload(true);
+    }).catch(error=>{
+      console.log(error);
+    });
   };
 
   //update book details function
@@ -93,9 +100,12 @@ function App() {
       updateprice: (txt_updateprice ? txt_updateprice : Pupdateprice),
       updatesource: (txt_updatesource ? txt_updatesource : Pupdatesource),
       updateremarks: (txt_updateremarks ? txt_updateremarks : Pupdateremarks)
+    }).then(response => {
+      alert("Successfully Updated..!");
+      //window.location.reload(true);
+    }).catch(error=>{
+      console.log(error);
     });
-    alert("Successfully updated..!");
-    window.location.reload(true);
   };
 
   //Modal showing function
